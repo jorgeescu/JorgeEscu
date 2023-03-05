@@ -27,28 +27,59 @@
             </nav>
             
         </header>
+        <section class="hambuerguesa">
+<div class="slider">
+<div class="slide">
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
 
-        <div class="hamburguesas">
-            <div class="titulo">
-                <h2>Nuestras deliciosas hamburguesas</h2>
-            </div>
+    <div class="st first">
+        <img src="../images/hm1.jpg" alt="" srcset="">
+    </div>
+    <div class="st">
+        <img src="../images/hm2.jpg" alt="" srcset="">
+    </div>
+    <div class="st">
+        <img src="../images/hm3.jpg" alt="" srcset="">
+    </div>
+    <div class="st">
+        <img src="../images/hm4.jpg" alt="" srcset="">
+    </div>
 
-            <div class="princi">
-                <div class="fotos">
-                    <div class="foto1"><img src="../images/hm1.jpg" alt="Todas las hamburguesas"></div>
-                    <div class="foto1"><img src="../images/hm2.jpg" alt="Cheesburguer"></div>
-                    <div class="foto1"><img src="../images/hm3.jpg" alt="Barbacoa"></div>
-                    <div class="foto1"><img src="../images/hm4.jpg" alt="Bacon"></div>
-                </div>
-            </div>
+    <div class="nav-auto">
+        <div class="a-b1"></div>
+        <div class="a-b2"></div>
+        <div class="a-b3"></div>
+        <div class="a-b4"></div>
+    </div>
+</div>
+<div class="nav-m">
+    <label for="radio1" class="m-btn"></label>
+    <label for="radio1" class="m-btn"></label>
+    <label for="radio1" class="m-btn"></label>
+    <label for="radio1" class="m-btn"></label>
+</div>
+</div>
 
-
-        </div>
+        </section>
+      
 
 
 
 
     </div>
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            counter++;
+            if(counter>4){
+                counter=1;
+            }
+        },5000);
+    </script>
     
 </body>
 </html>
